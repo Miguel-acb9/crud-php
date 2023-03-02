@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Cadastro</title>
+</head>
 
+<body>
+    <h1>Sistema de Cadastro</h1>
+    <section>
+        <form action="crud/read.php" method="post">
+            <input type="submit" value="Listar Usuários">
+        </form>
+    </section>
+    <hr>
+
+
+
+    <h2>Login</h2>
+    <section>
+        <form action="crud/create.php" method="get">
+            <label for="email">E-mail: </label>
+            <input type="email" name="email" id="id_email">
+
+            <label for="senha">Senha: </label>
+            <input type="password" name="senha" id="id_senha"><br>
+            
+            <input type="submit" value="Entrar">
+        </form>
+    </section>
+    <hr>
+
+
+
+    <h2>Cadastrar</h2>
+    <section>
+        <form action="login.php" method="post">
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" id="id_nome">
+
+            <label for="email">E-mail: </label>
+            <input type="email" name="email" id="id_email">
+
+            <label for="senha">Senha: </label>
+            <input type="password" name="senha" id="id_senha"><br>
+            
+            <input type="submit" value="Registrar">
+        </form>
+    </section>
+    <hr>
+</body>
+</html>
